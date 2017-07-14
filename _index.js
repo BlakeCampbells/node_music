@@ -6,45 +6,42 @@ if (!fs.existsSync(dir)){
   fs.mkdirSync(dir);
 }
 
-var bass = scribble.clip({
+var s_01 = scribble.clip({
   notes: scribble.mode('c', 'minor'),
-  pattern: 'x_-x_-x_-x'.repeat(64),
-  sizzle: true,
-  shuffle: true
+  pattern: '-x_-x_-x_-x_'.repeat(64),
+  sizzle: true
 });
-scribble.midi(bass, dir + '/bass.mid');
+scribble.midi(s_01, dir + '/s_01.mid');
 
 
-var chords = scribble.clip({
+var s_02 = scribble.clip({
   notes: ['e4', 'g4', 'G#m'],
   pattern: 'x_x_x_x_x-'.repeat(64),
-  sizzle: true,
-  shuffle: true
+  sizzle: true
 });
-scribble.midi(chords, dir + '/chords.mid');
+scribble.midi(s_02, dir + '/s_02.mid');
 
 
-var chords = scribble.clip({
+var s_03 = scribble.clip({
   notes: scribble.mode('c', 'aeolian'),
   pattern: 'x----'.repeat(128),
   sizzle: true,
-  shuffle: true,
   accentMap: [100, 120, 127, 127, 127]
 });
-scribble.midi(chords, dir + '/c.mid')
+scribble.midi(s_03, dir + '/s_03.mid')
 
 
-var scaling = scribble.clip({
+var s_04 = scribble.clip({
   notes: ['a#2', 'b2', 'c3', 'c#3', 'c3', 'b2', 'a#2'],
   pattern: 'x_'.repeat(64),
-  sizzle: true,
+  sizzle: true
 });
-scribble.midi(scaling, dir + '/scale.mid');
+scribble.midi(s_04, dir + '/s_04.mid');
 
 
-var bass2 = scribble.clip({
+var s_05 = scribble.clip({
   notes: scribble.chord('CMaj'),
   pattern: 'x_xxxx_x____x'.repeat(64),
   sizzle: true
 });
-scribble.midi(bass2, dir + '/bass2.mid');
+scribble.midi(s_05, dir + '/s_05.mid');
