@@ -13,11 +13,10 @@ var s_01 = scribble.clip({
 });
 scribble.midi(s_01, dir + '/s_01.mid');
 
-
+var s_02_pattern = 'x_x_x-'.repeat(6) + 'xxx___'
 var s_02 = scribble.clip({
   notes: ['e4', 'g4', 'G#m'],
-  pattern: 'x_x_x_x_x-'.repeat(64),
-  sizzle: true
+  pattern: s_02_pattern.repeat(64)
 });
 scribble.midi(s_02, dir + '/s_02.mid');
 
