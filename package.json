@@ -1,0 +1,26 @@
+{
+  "name": "music",
+  "version": "1.0.0",
+  "description": "Scribbletune Music testing",
+  "main": "_index.js",
+  "scripts": {
+    "test": "node _index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlakeCampbells/node_music.git"
+  },
+  "keywords": [
+    "Music",
+    "Node"
+  ],
+  "author": "Blake Campbell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BlakeCampbells/node_music/issues"
+  },
+  "homepage": "https://github.com/BlakeCampbells/node_music#readme",
+  "dependencies": {
+    "scribbletune": "^0.9.1"
+  }
+}
